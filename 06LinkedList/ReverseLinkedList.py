@@ -10,5 +10,24 @@ def reverse_linked_list(head):
 
     return prev
 
-# The solution validated successfully by LeetCode
+
+# The solution validated successfully on LeetCode
 # https://leetcode.com/problems/reverse-linked-list/submissions/865143428/
+
+# Using recursion
+# T: O(n) M: O(n)
+def reverse_linked_list_by_recursion(head):
+    if not head:
+        return head
+
+    if not head.next:
+        return head
+
+    newHead = reverse_linked_list(head.next)
+    head.next.next = head
+    head.next = None
+
+    return newHead
+
+# The solution validated successfully on LeetCode
+# https://leetcode.com/problems/reverse-linked-list/submissions/865154416/
