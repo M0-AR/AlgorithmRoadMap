@@ -1,5 +1,7 @@
 from collections import defaultdict
 
+# Todo: this solution is not valid because consider when we have a two strings with same sum number of ascii
+#  character but they have different letter
 
 # T: O(m * n) where m is the list of string is given and n is how many characters in each string
 def sum_of_ascii(s):
