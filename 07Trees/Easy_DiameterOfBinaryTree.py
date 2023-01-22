@@ -19,6 +19,7 @@ def diameter0(root):
 
 
 # T: O(n) S: O(n) for stack calling
+# T: O(n) visit every single node at most on time
 def diameter(root):
     res = [0]
 
